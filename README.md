@@ -1,6 +1,6 @@
 # static-code-analyzer
 
-> Analizador estatico Roslyn para C#
+> Roslyn-based Static Code Analyzer for C#
 
 ![Language](https://img.shields.io/github/languages/top/J1u2a3n8/static-code-analyzer)
 ![License](https://img.shields.io/github/license/J1u2a3n8/static-code-analyzer)
@@ -8,24 +8,24 @@
 ![Stars](https://img.shields.io/github/stars/J1u2a3n8/static-code-analyzer?style=social)
 ![Issues](https://img.shields.io/github/issues/J1u2a3n8/static-code-analyzer)
 
-## 📋 Descripción
+## Description
 
-Proyecto destacado del portfolio - demuestra habilidades avanzadas en arquitectura y patrones. Migrado, historial reescrito, documentado para portfolio.
+A static analysis tool built on the Roslyn compiler platform that detects code smells, calculates complexity metrics, and enforces coding standards. Extensible rule engine with custom analyzers.
 
-## 🏗️ Arquitectura
+## Architecture
 
-Ver codigo para detalles.
+Modular: Parser → Syntax Tree Visitor → Rules Engine → Reporter (JSON/HTML/SARIF)
 
-## 🚀 Inicio Rápido
+## Quick Start
 
-### Prerrequisitos
+### Prerequisites
 
-.NET 8 SDK, Visual Studio 2022 / VS Code + C# Dev Kit
+.NET 8 SDK, Visual Studio 2022 / VS Code with C# Dev Kit
 
-### Instalación
+### Installation
 
 ```bash
-# Clonar
+# Clone
 git clone https://github.com/J1u2a3n8/static-code-analyzer.git
 cd static-code-analyzer
 
@@ -33,41 +33,41 @@ dotnet restore
 # dotnet build
 ```
 
-### Uso
+### Usage
 
 ```bash
-dotnet run --project src/
+dotnet run --project src/StaticAnalyzer -- --path ./target-project --output report.json
 ```
 
-## 🧪 Tests
+## Testing
 
 ```bash
 dotnet test
 ```
 
-## 📁 Estructura del Proyecto
+## Project Structure
 
 ```
 static-code-analyzer/
-├── src/              # Código fuente principal
-├── tests/            # Tests unitarios/integración
-├── docs/             # Documentación
-├── .github/          # Workflows CI/CD
+├── src/              # Main source code
+├── tests/            # Unit/integration tests
+├── docs/             # Documentation
+├── .github/          # CI/CD workflows
 └── README.md
 ```
 
-## 🛠️ Tech Stack
+## Tech Stack
 
-**C#**, .NET 8, ASP.NET Core, Entity Framework, xUnit
+C#, .NET 8, Roslyn (Microsoft.CodeAnalysis), Newtonsoft.Json
 
-## 📄 Licencia
+## License
 
-Este proyecto está bajo licencia **MIT** - ver [LICENSE](LICENSE) para detalles.
+This project is licensed under the **MIT License** - see [LICENSE](LICENSE) for details.
 
-## 👤 Autor
+## Author
 
 **J1u2a3n8** - [GitHub](https://github.com/J1u2a3n8) - [LinkedIn](https://linkedin.com/in/juanluiscanedo)
 
 ---
 
-⭐ Si este proyecto te fue útil, ¡dale una estrella!
+⭐ If you found this project useful, give it a star!
